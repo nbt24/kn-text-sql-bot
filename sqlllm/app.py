@@ -33,10 +33,8 @@ def get_gemini_response(question,prompt):
 ## Fucntion To retrieve query from the database
 
 def read_sql_query(sql,db):
-    conn=sqlite3.connect(db)
-    cur=conn.cursor()
-    cur.execute(sql)
-    rows=cur.fetchall()
+    cursor.execute(sql)
+    rows=cursor.fetchall()
     conn.commit()
     conn.close()
     for row in rows:
