@@ -9,7 +9,7 @@ conn = sqlite3.connect('test.db')
 cursor = conn.cursor() 
   
 # Creating table 
-table ="""CREATE TABLE if not exists STUDENT(NAME VARCHAR(255), CLASS VARCHAR(255), 
+table ="""CREATE TABLE STUDENT(NAME VARCHAR(255), CLASS VARCHAR(255), 
 SECTION VARCHAR(255));"""
 cursor.execute(table) 
   
