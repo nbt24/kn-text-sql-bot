@@ -3,6 +3,6 @@ google-generativeai
 python-dotenv
 langchain
 PyPDF2
+pdf2image
 chromadb
 faiss-cpu
-pdf2image
