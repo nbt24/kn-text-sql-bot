@@ -5,7 +5,7 @@ import os
 db_path = os.path.join(os.path.dirname(__file__), "student.db")
 
 ## Connectt to SQlite
-connection=sqlite3.connect("student.db")
+connection=sqlite3.connect(db_path)
 
 # Create a cursor object to insert record,create table
 
