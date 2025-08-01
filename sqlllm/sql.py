@@ -1,5 +1,9 @@
 import sqlite3
 
+import os
+
+db_path = os.path.join(os.path.dirname(__file__), "student.db")
+
 ## Connectt to SQlite
 connection=sqlite3.connect("student.db")
 
